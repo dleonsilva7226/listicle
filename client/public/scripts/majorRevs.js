@@ -1,17 +1,19 @@
 const renderMajorRevs = async () => {
     const response = await fetch('/majorRevData')
     const data = await response.json()
-    // console.log("This is the data" + data)
     const mainContent = document.getElementById('main-content')
     
     if (data) {
         data.map((revInfo) => {
-            const card = createElement('div')
+            const card = document.createElement('div')
 
             const topContainer = document.createElement('div')
             const bottomContainer = document.createElement('div')
 
             topContainer.style.backgroundImage = `url(${revInfo.image})`
+            const name = document.createElement('h3')
+            name.textContent = revInfo.name
+            bottomContainer.appendChild(name)
             card.appendChild(topContainer)
             card.appendChild(bottomContainer)
             mainContent.appendChild(card)
