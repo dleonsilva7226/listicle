@@ -7,7 +7,7 @@ const renderMajorRevs = async () => {
     
     if (data) {
         data.map((revInfo) => {
-            const card = document.createElement('article')
+            const card = document.createElement('div')
             card.classList.add('card')
 
             const topContainer = document.createElement('div')
