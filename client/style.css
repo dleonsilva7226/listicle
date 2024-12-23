@@ -1,0 +1,140 @@
+/* Root Styles CSS */
+:root {
+    background-color: #1a1a1a; /* Dark background representing turmoil */
+    font-family: 'Avenir', Helvetica, sans-serif;
+    color: #fff; /* White text to contrast with the dark background */
+  }
+  
+  /* Header CSS */
+  .header-container {
+    overflow: hidden;
+    padding: 20px 10px;
+    padding-bottom: 300px;
+    background-color: #9b1c1c; /* Revolutionary red to evoke passion and urgency */
+  }
+  
+  .header-left {
+    float: left;
+    height: 100px;
+    width: 310px;
+  }
+  
+  .header-left img {
+    padding-top: 8px;
+    height: 80px;
+  }
+  
+  .header-left h1 {
+    float: right;
+    font-size: 45px;
+    color: #f0c674; /* Gold color to symbolize wealth, victory, or revolution */
+  }
+  
+  /* Home page CSS */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #9b1c1c; /* Red border for revolution theme */
+    border-radius: 0.3rem;
+    box-shadow: 12px 12px 2px 1px rgba(255, 0, 0, 0.2); /* Red box-shadow for dramatic impact */
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .card img {
+    height: 100%;
+  }
+  
+  .top-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    background-color: #333; /* Darkened backdrop for intensity */
+  }
+  
+  .bottom-container {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .bottom-container div {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: medium;
+    color: #f0c674; /* Gold-colored header text */
+  }
+  
+  .bottom-container p {
+    margin: 2px;
+    color: #fff; /* White text for readability */
+  }
+  
+  .bottom-container a {
+    color: #d9a200; /* Golden yellow for links, representing a call to action or movement */
+    text-decoration: none;
+  }
+  
+  /* 404 Page CSS */
+  .fof-container {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff; /* White text for the 404 page */
+  }
+  
+  .fof {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .fof h1 {
+    color: #9b1c1c; /* Red for bold emphasis */
+    font-size: 50px;
+    display: inline-block;
+    padding-right: 12px;
+    animation: type 0.6s alternate infinite;
+  }
+  
+  @keyframes type {
+    from {
+      box-shadow: inset -3px 0px 0px #888;
+    }
+    to {
+      box-shadow: inset -3px 0px 0px transparent;
+    }
+  }
+  
+  /* Detail Page CSS.UPDATE THIS */ 
+  .gift-info {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image-container {
+    padding-left: 100px;
+    width: 40vw;
+  }
+  
+  .image-container img {
+    width: 80%;
+  }
+  
+  .gift-details {
+    width: 45vw;
+    background-color: #333; /* Dark background for the detail section */
+    color: #f0c674; /* Gold-colored text */
+  }
