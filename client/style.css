@@ -4,6 +4,16 @@
     font-family: 'Avenir', Helvetica, sans-serif;
     color: #fff; /* White text to contrast with the dark background */
   }
+
+  header {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200604/pngtree-retro-fist-revolution-struggle-mosaic-red-background-image_338028.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
   
   /* Header CSS */
   .header-container {
@@ -12,6 +22,26 @@
     padding-bottom: 300px;
     background-color: #9b1c1c; /* Revolutionary red to evoke passion and urgency */
   }
+
+  .title {
+    /* Manual Rule */
+    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    margin: 0; 
+    background: linear-gradient(90deg, #FF7F7F, #FFA500, #FFD700); /* Soft Red to Orange to Gold */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 3rem; /* Adjust size as needed */
+    text-shadow: 
+        1px 1px 2px rgba(255, 223, 186, 0.8), /* Adds a warm glow */
+        0px 0px 8px rgba(255, 215, 0, 0.6); /* Subtle outer glow */
+    letter-spacing: 1px; /* Improves readability */
+  }
+
   
   .header-left {
     float: left;
@@ -55,6 +85,12 @@
     transition: filter .5s ease-in-out;
   }
   
+  .header-img {
+    display: flex;
+    flex: 1;  
+    height: 200%;
+  }
+
   .card img {
     height: 100%;
   }
@@ -147,4 +183,6 @@
   .card:hover {
     filter: brightness(30%);
   }
+
+
 
