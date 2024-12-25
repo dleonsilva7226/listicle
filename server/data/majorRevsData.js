@@ -1,7 +1,7 @@
 const revData = [
     {
         "id": 1,
-        "name": "French Revolution",
+        "name": "The French Revolution",
         "timePeriod": "1789-1799",
         "description": "A powerful surge of social upheaval that toppled monarchy and sparked global revolutionary movements",
         "country": "France",
@@ -11,7 +11,7 @@ const revData = [
     },
     {
         "id": 2,
-        "name": "American Revolution",
+        "name": "The American Revolution",
         "timePeriod": "1775-1783",
         "description": "A fight for independence that dismantled colonial rule and birthed a new nation, setting the stage for global democratic movements",
         "country": "United States",
@@ -21,7 +21,7 @@ const revData = [
     },
     {
         "id": 3,
-        "name": "Russian Revolution",
+        "name": "The Russian Revolution",
         "timePeriod": "1917",
         "description": "A decisive uprising that overthrew Russia’s imperial government, leading to the rise of the Soviet Union and reshaping global politics",
         "country": "Russia",
@@ -31,7 +31,7 @@ const revData = [
     },
     {
         "id": 4,
-        "name": "Haitian Revolution",
+        "name": "The Haitian Revolution",
         "timePeriod": "1791-1804",
         "description": "A historic revolt that abolished slavery, overthrew colonial rule, and created the first independent black republic",
         "country": "Haiti",
@@ -41,7 +41,7 @@ const revData = [
     },
     {
         "id": 5,
-        "name": "Chinese Revolution",
+        "name": "The Chinese Revolution",
         "timePeriod": "1945-1949",
         "description": "A transformative struggle that ended imperial rule and established communist rule, reshaping China's future and global influence",
         "country": "China",
@@ -51,7 +51,7 @@ const revData = [
     },
     {
         "id": 6,
-        "name": "Cuban Revolution",
+        "name": "The Cuban Revolution",
         "timePeriod": "1953-1959",
         "description": "A bold uprising that overthrew a dictator, establishing a communist regime and transforming Cuba's political and social landscape",
         "country": "Cuba",

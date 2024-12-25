@@ -96,6 +96,11 @@
   }
   
   .top-container {
+    /* Flex properties */
+    display: flex;
+    flex: 1;
+    align-items: last baseline;
+    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -177,12 +182,23 @@
     color: #f0c674; /* Gold-colored text */
   }
 
+  
+  .hidden-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    filter: brightness(100%);
+  }
+
 
   /* PSEUDOCLASSES BELOW */
 
-  .card:hover {
+  /* .card:hover {
     filter: brightness(30%);
-  }
+  } */
 
 
 

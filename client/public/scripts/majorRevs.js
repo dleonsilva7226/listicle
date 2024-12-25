@@ -15,13 +15,38 @@ const renderMajorRevs = async () => {
             const bottomContainer = document.createElement('div')
             bottomContainer.classList.add('bottom-container')
             bottomContainer.classList.add('blurb')
-            // const title = document.createElement('h7')
-            // title.textContent = revInfo.name
-            // const image = document.createElement('img')
-            // image.src = revInfo.image
-            // topContainer.appendChild(title)
-            // topContainer.appendChild(image)
+
+            const hiddenContent = document.createElement('div')
+            hiddenContent.classList.add('hidden-content')
+            const revTitle = document.createElement('div')
+            revTitle.textContent = revInfo.name
+            hiddenContent.appendChild(revTitle)
+
+            
+            const moreInfoBtn = document.createElement('button')
+            moreInfoBtn.textContent = "More Info"
+            hiddenContent.appendChild(moreInfoBtn)
+
             topContainer.style.backgroundImage = `url(${revInfo.image})`
+
+            // Event listener for topContainer. WEIRD ISSUE WITH THEM
+            card.addEventListener("mouseover", function() {
+                topContainer.appendChild(hiddenContent)
+            })
+
+            topContainer.addEventListener("mouseover", function() {
+                topContainer.appendChild(hiddenContent)
+            })
+
+            card.addEventListener("mouseout", function () {
+                topContainer.removeChild(hiddenContent)
+            })
+
+            topContainer.addEventListener("mouseout", function () {
+                topContainer.removeChild(hiddenContent)
+            })
+
+            // ISSUE WITH EVENT LISTENERS ABOVE
             
             const description = document.createElement('div')
             description.textContent = revInfo.description
