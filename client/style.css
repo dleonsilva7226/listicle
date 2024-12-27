@@ -162,7 +162,7 @@
   }
   
   /* Detail Page CSS.UPDATE THIS */ 
-  .gift-info {
+  .major-rev-info {
     display: flex;
     flex-direction: row;
   }
@@ -176,7 +176,7 @@
     width: 80%;
   }
   
-  .gift-details {
+  .major-rev-details {
     width: 45vw;
     background-color: #333; /* Dark background for the detail section */
     color: #f0c674; /* Gold-colored text */

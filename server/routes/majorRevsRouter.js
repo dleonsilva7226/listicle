@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:majorRevId', (req, res) => {
-    res.status(200).send(path.resolve(__dirname, '../../client/public/majorRev.html'))
+    res.status(200).sendFile(path.resolve(__dirname, `../../client/public/majorRev.html`))
 })
 
 export default router

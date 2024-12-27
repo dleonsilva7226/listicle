@@ -7,10 +7,10 @@ const app = express()
 //Middleware configuration
 
 //Sends files from public directory
-app.use('/public', express.static('../client/public'))
+app.use('/public', express.static('/client/public'))
 
 //Allows client to use files in client/scripts directory
-app.use('/scripts', express.static('../client/public/scripts'))
+app.use('/scripts', express.static('/client/public/scripts'))
 
 //Sends majorRev Data from ../data/majorRevsData.js to the following link in the first parameter below
 app.use('/majorRevData', revRouter)

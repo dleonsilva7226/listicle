@@ -23,9 +23,12 @@ const renderMajorRevs = async () => {
             hiddenContent.appendChild(revTitle)
 
             
-            const moreInfoBtn = document.createElement('button')
-            moreInfoBtn.textContent = "More Info"
-            hiddenContent.appendChild(moreInfoBtn)
+            const moreInfoLink = document.createElement('a')
+            moreInfoLink.textContent = "More Info"
+            moreInfoLink.href = `/majorRevData/${revInfo.id}`
+            moreInfoLink.setAttribute('role', 'button')
+            hiddenContent.appendChild(moreInfoLink)
+            
 
             topContainer.style.backgroundImage = `url(${revInfo.image})`
 
@@ -38,13 +41,13 @@ const renderMajorRevs = async () => {
                 topContainer.appendChild(hiddenContent)
             })
 
-            card.addEventListener("mouseout", function () {
-                topContainer.removeChild(hiddenContent)
-            })
+            // card.addEventListener("mouseout", function () {
+            //     topContainer.removeChild(hiddenContent)
+            // })
 
-            topContainer.addEventListener("mouseout", function () {
-                topContainer.removeChild(hiddenContent)
-            })
+            // topContainer.addEventListener("mouseout", function () {
+            //     topContainer.removeChild(hiddenContent)
+            // })
 
             // ISSUE WITH EVENT LISTENERS ABOVE
             
