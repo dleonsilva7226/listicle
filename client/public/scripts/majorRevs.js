@@ -32,24 +32,23 @@ const renderMajorRevs = async () => {
 
             topContainer.style.backgroundImage = `url(${revInfo.image})`
 
-            // Event listener for topContainer. WEIRD ISSUE WITH THEM
-            card.addEventListener("mouseover", function() {
+            // Occurs when hovering over cards
+            card.addEventListener("mouseenter", function() {
+                hiddenContent.style.opacity = 0
+                hiddenContent.style.transition = `opacity 3s ease`
+                hiddenContent.style.opacity = 1
                 topContainer.appendChild(hiddenContent)
+                card.style.filter = `brightness(0.5)`
+                hiddenContent.style.filter = `brightness(2)`
             })
 
-            topContainer.addEventListener("mouseover", function() {
-                topContainer.appendChild(hiddenContent)
+            // Occurs when not hovering over cards
+            card.addEventListener("mouseleave", function () {
+                hiddenContent = setTimeout(() => {
+                    topContainer.removeChild(hiddenContent)
+                    card.style.filter = `brightness(100%)`
+                }, 500)
             })
-
-            // card.addEventListener("mouseout", function () {
-            //     topContainer.removeChild(hiddenContent)
-            // })
-
-            // topContainer.addEventListener("mouseout", function () {
-            //     topContainer.removeChild(hiddenContent)
-            // })
-
-            // ISSUE WITH EVENT LISTENERS ABOVE
             
             const description = document.createElement('div')
             description.textContent = revInfo.description
