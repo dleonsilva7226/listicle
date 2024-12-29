@@ -39,7 +39,7 @@ const renderMajorRevs = async () => {
                 hiddenContent.style.opacity = 1
                 topContainer.appendChild(hiddenContent)
                 card.style.filter = `brightness(0.5)`
-                hiddenContent.style.filter = `brightness(2)`
+                // hiddenContent.style.filter = `brightness(2)`
             })
 
             // Occurs when not hovering over cards

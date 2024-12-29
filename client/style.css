@@ -162,22 +162,22 @@
   }
   
   /* Detail Page CSS.UPDATE THIS */ 
-  .major-rev-info {
+  /* .major-rev-info {
     display: flex;
     flex-direction: row;
-  }
+  } */
   
-  .image-container {
+  /* .image-container {
     padding-left: 100px;
     width: 40vw;
-  }
+  } */
   
-  .image-container img {
+  /* .image-container img {
     width: 80%;
-  }
+  } */
   
   .major-rev-details {
-    width: 45vw;
+    /* width: 45vw; */
     background-color: #333; /* Dark background for the detail section */
     color: #f0c674; /* Gold-colored text */
   }
@@ -196,12 +196,39 @@
     height: 100%;
   }
 
+  .image-container {
+    display: flex;
+    /* flex: 1; */
+    height: 40%;
+    width: 40%;
+    justify-content: center;
+    /* display: flex; */
+    object-fit: contain;
+  }
 
-  /* PSEUDOCLASSES BELOW */
+  .major-rev-details {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 50%;
+    height: 50%;
+    padding: 40px;
+  }
 
-  /* .card:hover {
-    filter: brightness(30%);
-  } */
+  #major-rev-container{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  
+  }
 
-
-
+  

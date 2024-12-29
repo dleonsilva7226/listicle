@@ -26,6 +26,9 @@ const renderMajorRev = async () => {
         revCause.textContent = "Cause: " + majorRev.cause
         const revOutcome = document.getElementById('outcome')
         revOutcome.textContent = "Outcome: " + majorRev.outcome
+
+        // title stuff here
+        document.title = majorRev.name
         
     } else {
         const message = document.createElement('h2')
