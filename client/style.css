@@ -214,9 +214,8 @@
     justify-content: center;
     /* gap: 20px; */
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     padding: 40px;
   }
 
@@ -231,4 +230,22 @@
   
   }
 
-  
+
+
+  /* PICOCSS VARIABLES */
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #00895A;
+    --pico-font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
+
+  }
+
+  p {
+    color: #51B4FF;
+    --pico-font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --pico-font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+  }

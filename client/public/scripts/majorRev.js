@@ -15,17 +15,24 @@ const renderMajorRev = async () => {
         const revImg = document.getElementById('image')
         revImg.src = majorRev.image
         const revName = document.getElementById('name')
-        revName.textContent = majorRev.name
-        const revTimePeriod = document.getElementById('time-period')
-        revTimePeriod.textContent = "Time Period: " + majorRev.timePeriod
-        const revDescription = document.getElementById('description')
-        revDescription.textContent = "Description: " + majorRev.description
+        revName.textContent = majorRev.name + " (" + majorRev.timePeriod + ")"
+        revName.style.textAlign = "center"
+        revName.style.fontStyle = "italic"
+        // const revTimePeriod = document.getElementById('time-period')
+        // revTimePeriod.textContent = "Time Period: " + majorRev.timePeriod
+        
+        
         const revCountry = document.getElementById('country')
-        revCountry.textContent = "Location: " + majorRev.country
+        revCountry.textContent = majorRev.country
+
+        const revDescription = document.getElementById('description')
+        revDescription.textContent = majorRev.description
+        revDescription.style.textAlign = "center"
+        
         const revCause = document.getElementById('cause')
-        revCause.textContent = "Cause: " + majorRev.cause
+        revCause.textContent = majorRev.cause
         const revOutcome = document.getElementById('outcome')
-        revOutcome.textContent = "Outcome: " + majorRev.outcome
+        revOutcome.textContent = majorRev.outcome
 
         // title stuff here
         document.title = majorRev.name
